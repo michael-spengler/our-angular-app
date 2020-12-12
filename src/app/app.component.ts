@@ -5,6 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'our-angular-app';
+  targetGroup = 'Folks';
+  counter = 0
+
+  public onClick() {
+    setInterval(() => {
+      this.counter = this.counter + 1
+    }, 1000)
+  }
 }
