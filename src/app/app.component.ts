@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  targetGroup = 'Folks';
+  targetGroup = 'WWI19DSA';
   counter = 0
 
-  public onClick() {
+  public onButtonClick() {
     setInterval(() => {
       this.counter = this.counter + 1
     }, 1000)
